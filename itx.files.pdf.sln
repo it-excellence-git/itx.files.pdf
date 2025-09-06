@@ -5,19 +5,56 @@ VisualStudioVersion = 17.14.36408.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itx.files.pdf", "itx.files.pdf\itx.files.pdf.csproj", "{A76D862B-58B3-43A6-8144-1FA186675421}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itx.files.pdf.zugferd", "itx.files.pdf.zugferd\itx.files.pdf.zugferd.csproj", "{9382A154-095F-483C-AE4F-B883B8C27D6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itx.files.pdf.zugferd.abstractions", "itx.files.pdf.zugferd.abstractions\itx.files.pdf.zugferd.abstractions.csproj", "{547A88D5-083D-4EB6-83C7-1DFEE8861832}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{149E71DA-A95F-48DE-9CF0-7319BE5BFF73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itx.files.pdf.zugferd.tests", "itx.files.pdf.zugferd.tests\itx.files.pdf.zugferd.tests.csproj", "{163B66C4-9258-4F52-9188-22F24B66A3F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "zugferd", "zugferd", "{167D2E7E-EA5E-4A2D-BE46-8E5C89E7538F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A76D862B-58B3-43A6-8144-1FA186675421}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A76D862B-58B3-43A6-8144-1FA186675421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A76D862B-58B3-43A6-8144-1FA186675421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A76D862B-58B3-43A6-8144-1FA186675421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76D862B-58B3-43A6-8144-1FA186675421}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{A76D862B-58B3-43A6-8144-1FA186675421}.Test|Any CPU.Build.0 = Test|Any CPU
+		{9382A154-095F-483C-AE4F-B883B8C27D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9382A154-095F-483C-AE4F-B883B8C27D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9382A154-095F-483C-AE4F-B883B8C27D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9382A154-095F-483C-AE4F-B883B8C27D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9382A154-095F-483C-AE4F-B883B8C27D6A}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{9382A154-095F-483C-AE4F-B883B8C27D6A}.Test|Any CPU.Build.0 = Test|Any CPU
+		{547A88D5-083D-4EB6-83C7-1DFEE8861832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{547A88D5-083D-4EB6-83C7-1DFEE8861832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{547A88D5-083D-4EB6-83C7-1DFEE8861832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{547A88D5-083D-4EB6-83C7-1DFEE8861832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{547A88D5-083D-4EB6-83C7-1DFEE8861832}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{547A88D5-083D-4EB6-83C7-1DFEE8861832}.Test|Any CPU.Build.0 = Test|Any CPU
+		{163B66C4-9258-4F52-9188-22F24B66A3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{163B66C4-9258-4F52-9188-22F24B66A3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{163B66C4-9258-4F52-9188-22F24B66A3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{163B66C4-9258-4F52-9188-22F24B66A3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{163B66C4-9258-4F52-9188-22F24B66A3F3}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{163B66C4-9258-4F52-9188-22F24B66A3F3}.Test|Any CPU.Build.0 = Test|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{163B66C4-9258-4F52-9188-22F24B66A3F3} = {167D2E7E-EA5E-4A2D-BE46-8E5C89E7538F}
+		{167D2E7E-EA5E-4A2D-BE46-8E5C89E7538F} = {149E71DA-A95F-48DE-9CF0-7319BE5BFF73}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDF52610-2D11-4B94-8147-FC3B3A2401BF}

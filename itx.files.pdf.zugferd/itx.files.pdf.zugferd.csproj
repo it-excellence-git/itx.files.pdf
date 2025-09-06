@@ -6,8 +6,9 @@
     <Nullable>enable</Nullable>
     <Configurations>Debug;Release;Test</Configurations>
   </PropertyGroup>
+
   <PropertyGroup>
-    <PackageId>itx.files.pdf</PackageId>
+    <PackageId>itx.files.pdf.zugferd</PackageId>
     <Authors>Detlef Regehr</Authors>
     <Company>Detlef Regehr</Company>
     <Copyright>(C) 2025 Detlef Regehr, Germany</Copyright>
@@ -17,12 +18,20 @@
     <IncludeSource>true</IncludeSource>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DebugType>portable</DebugType>
-    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\itx.files.pdf.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\itx.files.pdf.zugferd.xml</DocumentationFile>
     <RepositoryUrl>https://github.com/DetlefRegehr/itx.files.pdf</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
   <ItemGroup>
-    <None Include="..\BuildNuGetPackages.ps1" Link="BuildNuGetPackages.ps1" />
+    <PackageReference Include="ZUGFeRD.PDF-csharp" Version="17.4.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\itx.files.pdf.zugferd.abstractions\itx.files.pdf.zugferd.abstractions.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="itx.png" Pack="true" PackagePath="" />
   </ItemGroup>
 
